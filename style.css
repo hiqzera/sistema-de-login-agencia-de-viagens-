@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: auto;
+    min-height: 50vh;
+    background: linear-gradient(to left, #3498db 0%, #2ecc71 100%);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    height: 40rem;
+    margin-left: 50rem;
+    width: 35rem;
+    margin-top: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    font-size: 24px;
+    border-radius: 2rem;
+    box-shadow: -4px -4px 20px 5px #3498db, #2ecc71 4px 4px 25px 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+p {
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+
+input {
+    border-radius: 1rem;
+    width: 30rem;
+    padding: 1rem;
+    margin: 1rem 0;
+    font-size: 18px;
+    background-color: #f0f0f0;
+    border: none;
+    position: relative;
+}
+
+#olho {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background: url('caminho/do-seu-icone-fechado.png') no-repeat;
+    background-size: cover;
+    cursor: pointer;
+  }
+  
+  #olho.aberto {
+    background: url('caminho/do-seu-icone-aberto.png') no-repeat;
+    background-size: cover;
+  }
+
+.login {
+    margin-top: 25rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 21px;
+    border-radius: 1rem;
+    padding: 1rem;
+    color: #ffffff;
+    background-color: #25c940;
+    border: none;
+    cursor: pointer;
+    transition: ease-in-out .5s;
+    position: absolute;
+}
+
+.login:hover {
+    font-size: 24px;
+}
